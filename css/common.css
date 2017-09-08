@@ -1,0 +1,223 @@
+body {
+    font-family: arial;
+    text-align:center;
+    margin:0;
+    padding:0;
+    background-color: aliceblue;
+}
+
+.wrapper {
+    margin:auto;
+    width:850px;
+    max-width:90%;
+    padding:25px;
+    text-align:initial;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid_row {
+    display: flex;
+    margin:20px -10px 0 -10px;
+}
+
+.grid_row--right {
+    text-align: right;
+}
+.grid_column {
+    box-sizing:border-box;
+    width:100%;
+    padding:0 10px;
+}
+
+.grid_column-mid {
+    width:24.99%;
+}
+
+.grid_column--margin-mid {
+    margin-left:50%;
+}
+
+.link {
+    cursor: pointer;
+    color: #24a7f8;
+}
+
+.dialog {
+    position:fixed;
+    top:50%;
+    left:50%;
+    background:#f9f9f9;
+    padding:12px;
+    box-shadow: #ccc 1px 1px 11px 4px;
+    display: none;
+    transform:translate(-50%, -50%);
+    margin:auto;
+    width:480px;
+    max-width:92%;
+}
+
+.dialog_open {
+    display: block;
+}
+
+.dialog_close {
+    color:#bbbaba;
+    cursor: pointer;
+    float: right;
+}
+
+.input {
+    width:100%;
+    margin-top:20px;
+}
+
+.input--right {
+    text-align: right;
+}
+
+.dialog_close:before{
+    font-size:24px;
+    content:"x";
+}
+
+.dialog_title {
+    font-weight: normal;
+}
+
+.dialog_title-blue {
+    color:#27a7f7;
+}
+
+.dialog_content {
+    margin:10px;
+}
+
+.input > .dropdown, .input > input:not([type=checkbox]) {
+    margin-top:10px;
+}
+
+.input--error > .dropdown, .input--error > input:not([type=checkbox]) {
+    border-color:red;
+}
+
+select.dropdown{
+    display: none;
+}
+
+div.dropdown {
+    position:relative;
+    background:#dedede;
+    width:100%;
+    box-sizing:border-box;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    cursor: default;
+}
+
+.message--error {
+    color:red;
+}
+
+.message--active {
+    display:flex !important;
+}
+
+.menu {
+    position:absolute;
+    z-index:10;
+    width:100%;
+    box-sizing:content-box;
+    box-shadow: #ccc 1px 3px 5px 2px;
+    display: none;
+    border:1px solid #dedede;
+    background: #fff;
+    top:100%;
+    left:-1px;
+    margin-top:1px;
+}
+
+.dropdown__placeholder {
+    font-size: initial;
+    border: none;
+    outline: none;
+    padding:10px;
+    background:#dedede;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.dropdown__placeholder:focus {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown--active {
+    background: #fff;
+    border:1px solid #27a7f7 !important;
+    box-shadow: #ccc 0px 0px 5px 2px;
+}
+
+.dropdown--active .menu {
+    display: block;
+}
+
+.menu__item {
+    box-sizing:border-box;
+    padding:10px;
+    width:100%;
+}
+
+.button {
+    padding:12px 22px;
+    box-sizing:border-box;
+    background:#fff;
+    font-size: initial;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    outline:none;
+    border:none;
+}
+
+.cancel-button {
+    background: #dedede;
+}
+
+.cancel-button:hover {
+    background:#d0d0d0;
+}
+
+.submit-button {
+    background: #27a7f7;
+    color:#fff;
+}
+
+.submit-button:hover {
+    background: #089af5;
+}
+
+.button--full {
+    width:100%;
+}
+
+.message {
+    display: none;
+    margin:10px 0 0 0;
+}
+
+.menu_item_active, .menu_item_selected, .menu__item:hover{
+    background:#f0f0f0;
+}
+
+.welcome , .welcome_message {
+    padding: 10px;
+    background-color: lightgrey;
+}

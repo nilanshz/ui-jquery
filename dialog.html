@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sumo Logic UI</title>
+        <link rel="stylesheet" type="text/css" class="ui" href="css/common.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="welcome">
+                <h1>Hi ! </h1>
+
+                <h2>Let me know who you are?</h2>
+                <p>Click <a class="link dialogLink">here</a> and show me please .</p>
+            </div>
+
+            <div class="welcome_message hidden">
+                <h2>Welcome To Sumo World!!</h2>
+
+                <p>So you are  <strong><span class="employee"></span></strong> from the <strong><span class="team"></span></strong> team. Welcome!</p>
+                <p class="sendEmail"></p>
+            </div>
+
+            <div class="dialog">
+                <span class="close-button dialog_close"></span>
+                <div class="dialog_content">
+                    <h2 class="dialog_title dialog_title-blue">Select an Employee</h2>
+
+                    <form id="employee_form" method="post" action="">
+                        <div class="input">
+                            <input type="checkbox" name="sendEmail" id="sendEmail">
+                            <label for="sendEmail">Send welcome email to employee</label>
+                        </div>
+
+                        <div class="input">
+                            <label for="team">Select a team in the Organization</label>
+                            <select class="dropdown searchable" id="team" name="team" placeholder="Select Team..">
+                            </select>
+                        </div>
+
+                        <div class="input">
+                            <label for="employee">Select an Employee</label>
+                            <select class="dropdown searchable" id="employee" name="employee" placeholder="Select Employee.."></select>
+                        </div>
+
+                        <div class="grid">
+                            <div class="grid_row grid_row--right">
+                                <div class="grid_column .grid_column-mid .grid_column--margin-mid">
+                                    <div class="button cancel-button button--full closeDialogButton">Cancel</div>
+                                </div>
+                                <div class="grid_column .grid_column-mid">
+                                    <input type="submit" class="button submit-button button--full" value="OK">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/validate.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>
